@@ -3,11 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARULDHAANYA</title>
+    <title>ARULBABU.CSS</title>
+    <link rel="stylesheet" href="style.css">
     <img width="250px" src="aruldhaanya.jpg" alt="">
+    <style>
+#heart {
+position: relative;
+width: 100px;
+height: 90px;
+}
+#heart::before,
+#heart::after {
+content: "";
+position: absolute;
+top: 0;
+width: 50px;
+height: 80px;
+background: red;
+border-radius: 50px 50px 0 0;
+}
+#heart::before {
+left: 50px;
+transform: rotate(-45deg);
+transform-origin: 0 100%;
+}
+#heart::after {
+left: 0;
+transform: rotate(45deg);
+transform-origin: 100% 100%;
+}
+</style>
 </head>
 <body>
-    <p>ARULBABU</p>
+<div id="heart"></div>
+</body>
+</html>
+</head>
+<body>
+     <p>Arul Dhaanya</p>
     <p>"You are the most beautiful person, both inside and out. I am so lucky to have you as my girlfriend."</p>
 </body>
 </html>
